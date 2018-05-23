@@ -25,10 +25,9 @@ public class NewTest2 {
 		driver.findElement(By.name("userName")).sendKeys("remi");
 		driver.findElement(By.name("password")).sendKeys("remi");
 		driver.findElement(By.name("login")).click();
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		driver.findElement(By.name("logout")).click();
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Find a Flight: Mercury Tours:");
+
 	
 		
 	}
